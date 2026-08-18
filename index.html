@@ -2,6 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miguel Rivera | Engineering Portfolio</title>
     <link rel="stylesheet" href="style.css">
@@ -28,38 +33,58 @@
         </p>
 
         <div class="hero-links">
-            <a href="#projects">View Projects</a>
 
-            <a href="https://www.linkedin.com/in/miguel-rivera-3490a7326/"
-               target="_blank">
-                LinkedIn
-            </a>
+    <a href="#projects" class="primary-button">
+        View Projects
+    </a>
 
-            <a href="https://github.com/mRivera2529"
-               target="_blank">
-                GitHub
-            </a>
-        </div>
+    <a href="Miguel_Rivera_Engineering_Resume.pdf"
+       target="_blank"
+       class="secondary-button">
+        View Resume
+    </a>
+
+    <a href="https://github.com/mRivera2529"
+       target="_blank"
+       class="secondary-button">
+        GitHub
+    </a>
+
+    <a href="https://www.linkedin.com/in/miguel-rivera-3490a7326/"
+       target="_blank"
+       class="secondary-button">
+        LinkedIn
+    </a>
+
+</div>
 
     </div>
 </header>
 
     <main>
 
-        <section>
-            <h2>About Me</h2>
+       <section>
+    <h2>About Me</h2>
 
-            <p>
-                I'm a Computer Engineering-focused Electrical Engineering student
-                at Temple University with an interest in computer hardware,
-                computer architecture, and software development.
-            </p>
+    <p>
+        I'm an Electrical Engineering student at Temple University
+        with a Computer Engineering focus and a strong interest in
+        computer hardware, computer architecture, and embedded systems.
+    </p>
 
-            <p>
-                I'm developing my technical skills through engineering coursework,
-                programming, hands-on projects, and independent learning.
-            </p>
-        </section>
+    <p>
+        I'm building my technical foundation through engineering
+        coursework, programming, hands-on projects, and independent
+        learning. My experience includes MATLAB, Python, embedded
+        systems, CAD, data analysis, and engineering modeling.
+    </p>
+
+    <p>
+        I'm particularly interested in developing the hardware and
+        software skills needed to design, understand, and troubleshoot
+        modern computer systems.
+    </p>
+</section>
 
         <section>
             <h2>Education</h2>
@@ -72,28 +97,39 @@
             </p>
         </section>
 
-        <section>
-            <h2>Technical Skills</h2>
+        <section id="skills">
+    <h2>Technical Skills</h2>
 
-            <ul>
-                <li>Python</li>
-                <li>MATLAB</li>
-                <li>MakeCode</li>
-                <li>Electrical Circuits</li>
-                <li>Embedded Systems</li>
-                <li>CAD</li>
-                <li>Data Analysis</li>
-                <li>Git & GitHub</li>
-                <li>VS Code</li>
-                <li>Microsoft Excel</li>
-                <li>Linux / Command Line</li>
-            </ul>
-        </section>
+    <div class="skills-grid">
 
-        <section id="projects">
+        <div class="skill-category">
+            <h3>Programming</h3>
+            <p>Python · MATLAB · MakeCode</p>
+        </div>
+
+        <div class="skill-category">
+            <h3>Engineering</h3>
+            <p>Electrical Circuits · Embedded Systems · CAD · Data Analysis · Mathematical Modeling</p>
+        </div>
+
+        <div class="skill-category">
+            <h3>Tools</h3>
+            <p>Git · GitHub · VS Code · Microsoft Excel · Linux / Command Line</p>
+        </div>
+
+    </div>
+</section>
+
+      <section id="projects">
     <h2>Engineering Projects</h2>
 
-            <article>
+    <div class="projects-grid">
+
+        <article class="project-card">
+            <div class="project-content">
+
+                <p class="project-type">TEMPLE UNIVERSITY</p>
+
                 <h3>Temperature-Regulated micro:bit Enclosure</h3>
 
                 <p>
@@ -111,9 +147,21 @@
                     Designed and constructed the enclosure using cardboard and
                     Styrofoam and incorporated CAD-designed and 3D-printed components.
                 </p>
-            </article>
 
-            <article>
+                <p class="project-skills">
+                    <strong>Skills:</strong>
+                    MakeCode · Embedded Systems · Electrical Circuits · CAD · 3D Printing
+                </p>
+
+            </div>
+        </article>
+
+
+        <article class="project-card">
+            <div class="project-content">
+
+                <p class="project-type">TEMPLE UNIVERSITY</p>
+
                 <h3>Wind Energy Analysis & Turbine Modeling</h3>
 
                 <p>
@@ -132,22 +180,33 @@
                     Evaluated profitability and breakeven conditions using an
                     engineering economic model.
                 </p>
-            </article>
-        </section>
 
-        <section>
-            <h2>Resume</h2>
+                <p class="project-skills">
+                    <strong>Skills:</strong>
+                    MATLAB · Data Analysis · Mathematical Modeling · Engineering Analysis
+                </p>
 
-            <p>
-                My engineering resume is available for download.
-            </p>
+            </div>
+                </article>
 
-          <a href="Miguel_Rivera_Engineering_Resume.pdf" target="_blank">
-    View / Download Engineering Resume
-</a>
-        </section>
+    </div>
+</section>
 
-       <section id="contact">
+<section id="resume">
+    <h2>Resume</h2>
+
+    <p>
+        My engineering resume is available for viewing and download.
+    </p>
+
+    <a class="action-button"
+       href="Miguel_Rivera_Engineering_Resume.pdf"
+       target="_blank">
+        View / Download Engineering Resume
+    </a>
+</section>
+
+<section id="contact">
     <h2>Contact</h2>
 
     <p>
@@ -155,24 +214,33 @@
         students, professors, and technology professionals.
     </p>
 
-    <p>
-        <a href="mailto:miguel.rivera0004@temple.edu">Email Me</a>
-        |
-        <a href="https://www.linkedin.com/in/miguel-rivera-3490a7326/" target="_blank">
+    <div class="contact-buttons">
+
+        <a class="action-button"
+           href="mailto:miguel.rivera0004@temple.edu">
+            Email Me
+        </a>
+
+        <a class="action-button"
+           href="https://www.linkedin.com/in/miguel-rivera-3490a7326/"
+           target="_blank">
             LinkedIn
         </a>
-        |
-        <a href="https://github.com/mRivera2529" target="_blank">
+
+        <a class="action-button"
+           href="https://github.com/mRivera2529"
+           target="_blank">
             GitHub
         </a>
-    </p>
+
+    </div>
 </section>
 
-    </main>
+</main>
 
-    <footer>
-        <p>© 2026 Miguel Rivera</p>
-    </footer>
+<footer>
+    <p>© 2026 Miguel Rivera</p>
+</footer>
 
 </body>
 </html>

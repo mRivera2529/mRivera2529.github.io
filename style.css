@@ -266,6 +266,7 @@ footer {
 
 .projects-window {
     flex: 1;
+    min-width: 0;
     overflow: hidden;
 }
 
@@ -275,7 +276,8 @@ footer {
 }
 
 .project-card {
-    flex: 0 0 calc(50% - 12.5px);
+    flex: 0 0 calc((100% - 25px) / 2);
+    min-width: 0;
     box-sizing: border-box;
     background-color: #F5F1E8;
     border: 1px solid #D8D0C2;
@@ -331,11 +333,11 @@ footer {
     transition: all 0.2s ease;
 }
 
-.carousel-arrow:hover {
+.carousel-arrow:hover:not(:disabled) {
     background-color: #756B5E;
     color: #FFFFFF;
     border-color: #756B5E;
-    transform: scale(1.05);
+    transform: translateY(-2px);
 }
 
 .carousel-arrow:disabled {

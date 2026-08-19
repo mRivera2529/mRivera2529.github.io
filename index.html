@@ -120,76 +120,129 @@
     </div>
 </section>
 
-      <section id="projects">
+<section id="projects">
     <h2>Engineering Projects</h2>
 
-    <div class="projects-grid">
+    <div class="projects-carousel">
 
-        <article class="project-card">
-            <div class="project-content">
+        <button class="carousel-arrow prev-arrow" aria-label="Previous projects">
+            &#10094;
+        </button>
 
-                <p class="project-type">TEMPLE UNIVERSITY</p>
+        <div class="projects-window">
 
-                <h3>Temperature-Regulated micro:bit Enclosure</h3>
+            <div class="projects-track">
 
-                <p>
-                    Collaborated with two teammates to design and build a
-                    self-regulating temperature enclosure using a BBC micro:bit V2,
-                    temperature sensors, fans, and external circuitry.
-                </p>
+                <article class="project-card">
+                    <div class="project-content">
 
-                <p>
-                    Developed code to monitor temperature and control the system,
-                    integrating hardware and software into a functional prototype.
-                </p>
+                        <p class="project-type">TEMPLE UNIVERSITY</p>
 
-                <p>
-                    Designed and constructed the enclosure using cardboard and
-                    Styrofoam and incorporated CAD-designed and 3D-printed components.
-                </p>
+                        <h3>Temperature-Regulated micro:bit Enclosure</h3>
 
-                <p class="project-skills">
-                    <strong>Skills:</strong>
-                    MakeCode · Embedded Systems · Electrical Circuits · CAD · 3D Printing
-                </p>
+                        <p>
+                            Collaborated with two teammates to design and build a
+                            self-regulating temperature enclosure using a BBC micro:bit V2,
+                            temperature sensors, fans, and external circuitry.
+                        </p>
 
-            </div>
-        </article>
+                        <p>
+                            Developed code to monitor temperature and control the system,
+                            integrating hardware and software into a functional prototype.
+                        </p>
 
+                        <p>
+                            Designed and constructed the enclosure using cardboard and
+                            Styrofoam and incorporated CAD-designed and 3D-printed components.
+                        </p>
 
-        <article class="project-card">
-            <div class="project-content">
+                        <p class="project-skills">
+                            <strong>Skills:</strong>
+                            MakeCode · Embedded Systems · Electrical Circuits · CAD · 3D Printing
+                        </p>
 
-                <p class="project-type">TEMPLE UNIVERSITY</p>
-
-                <h3>Wind Energy Analysis & Turbine Modeling</h3>
-
-                <p>
-                    Developed a MATLAB engineering model to analyze wind turbine
-                    energy production using Typical Meteorological Year (TMY)
-                    weather data.
-                </p>
-
-                <p>
-                    Adjusted wind-speed data for multiple turbine hub heights,
-                    calculated turbine power and energy production, and analyzed
-                    monthly energy production.
-                </p>
-
-                <p>
-                    Evaluated profitability and breakeven conditions using an
-                    engineering economic model.
-                </p>
-
-                <p class="project-skills">
-                    <strong>Skills:</strong>
-                    MATLAB · Data Analysis · Mathematical Modeling · Engineering Analysis
-                </p>
-
-            </div>
+                    </div>
                 </article>
 
+
+                <article class="project-card">
+                    <div class="project-content">
+
+                        <p class="project-type">TEMPLE UNIVERSITY</p>
+
+                        <h3>Wind Energy Analysis & Turbine Modeling</h3>
+
+                        <p>
+                            Developed a MATLAB engineering model to analyze wind turbine
+                            energy production using Typical Meteorological Year (TMY)
+                            weather data.
+                        </p>
+
+                        <p>
+                            Adjusted wind-speed data for multiple turbine hub heights,
+                            calculated turbine power and energy production, and analyzed
+                            monthly energy production.
+                        </p>
+
+                        <p>
+                            Evaluated profitability and breakeven conditions using an
+                            engineering economic model.
+                        </p>
+
+                        <p class="project-skills">
+                            <strong>Skills:</strong>
+                            MATLAB · Data Analysis · Mathematical Modeling · Engineering Analysis
+                        </p>
+
+                    </div>
+                </article>
+
+                <article class="project-card">
+    <div class="project-content">
+
+        <p class="project-type">PERSONAL PROJECT</p>
+
+        <h3>Engineering Portfolio Website</h3>
+
+        <p>
+            Designed and developed a responsive personal engineering portfolio
+            website to showcase technical skills, engineering projects,
+            education, and professional experience.
+        </p>
+
+        <p>
+            Built the website using HTML, CSS, and JavaScript with a focus on
+            responsive design, visual hierarchy, and a clean professional
+            presentation across desktop and mobile devices.
+        </p>
+
+        <p>
+            Used Git and GitHub for version control and deployed the website
+            through GitHub Pages for public access.
+        </p>
+
+        <p class="project-skills">
+            <strong>Skills:</strong>
+            HTML · CSS · JavaScript · Git · GitHub · Responsive Web Design
+        </p>
+
     </div>
+</article>
+
+            </div>
+
+        </div>
+
+        <button class="carousel-arrow next-arrow" aria-label="Next projects">
+            &#10095;
+        </button>
+
+    </div>
+
+    <div class="carousel-indicator">
+        <span id="carousel-position">1 / 1</span>
+    </div>
+
 </section>
 
 <section id="resume">
@@ -241,6 +294,8 @@
 <footer>
     <p>© 2026 Miguel Rivera</p>
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>

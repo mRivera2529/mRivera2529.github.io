@@ -255,16 +255,28 @@ footer {
 
 }
 
-/* Project Cards */
+/* Project Carousel */
 
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
+.projects-carousel {
+    display: flex;
+    align-items: center;
+    gap: 15px;
     margin-top: 25px;
 }
 
+.projects-window {
+    flex: 1;
+    overflow: hidden;
+}
+
+.projects-track {
+    display: flex;
+    gap: 25px;
+}
+
 .project-card {
+    flex: 0 0 calc(50% - 12.5px);
+    box-sizing: border-box;
     background-color: #F5F1E8;
     border: 1px solid #D8D0C2;
     border-radius: 10px;
@@ -304,17 +316,68 @@ footer {
     font-size: 14px;
 }
 
-/* Mobile Project Layout */
+/* Carousel Arrows */
+
+.carousel-arrow {
+    flex: 0 0 auto;
+    width: 42px;
+    height: 42px;
+    border: 1px solid #C7B9A5;
+    border-radius: 50%;
+    background-color: #E8DFD0;
+    color: #332D27;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.carousel-arrow:hover {
+    background-color: #756B5E;
+    color: #FFFFFF;
+    border-color: #756B5E;
+    transform: scale(1.05);
+}
+
+.carousel-arrow:disabled {
+    opacity: 0.35;
+    cursor: default;
+    transform: none;
+}
+
+/* Carousel Indicator */
+
+.carousel-indicator {
+    text-align: center;
+    margin-top: 15px;
+    color: #756B5E;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Mobile Project Carousel */
 
 @media (max-width: 600px) {
 
-    .projects-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
+    .projects-carousel {
+        gap: 8px;
+    }
+
+    .projects-track {
+        gap: 0;
+    }
+
+    .project-card {
+        flex: 0 0 100%;
     }
 
     .project-content {
         padding: 20px;
+    }
+
+    .carousel-arrow {
+        width: 36px;
+        height: 36px;
+        font-size: 18px;
     }
 
 }
